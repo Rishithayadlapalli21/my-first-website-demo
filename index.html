@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Oracle</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+.nav{
+    color:white;
+    font-size:14px;
+    margin:0 12px;
+    font-weight:500;
+    text-decoration:none;
+    white-space:nowrap;
+}
+.nav:hover{
+    text-decoration:underline;
+}
+.icon{
+    color:white;
+    font-size:14px;
+    margin:0 8px;
+    cursor:pointer;
+}
+.icon:hover{
+    color:#ccc;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row-reverse;
+    padding:50px 70px;
+    background:#f8f7f6;
+}
+
+.hero-text{
+    width:45%;
+}
+
+.hero-text h1{
+    font-size:36px;
+    font-weight:500;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.hero-text p{
+    font-size:15px;
+    color:#444;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.hero-text button{
+    background:#2c2c2c;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    font-size:14px;
+    cursor:pointer;
+}
+.hero-text button:hover{
+    background:black;
+}
+
+.hero-img{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+.hero-img img{
+    width:100%;
+    max-width:420px;
+}
+
+/* STORIES */
+.stories{
+    display:flex;
+    justify-content:space-between;
+    padding:60px 70px;
+    background:#fff;
+}
+.story-card{
+    width:32%;
+    padding:20px;
+    border-top:2px solid #3aa6a6;
+    display:flex;
+    flex-direction:column;
+}
+
+.story-card h3{
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+.story-card p{
+    font-size:14px;
+    line-height:1.6;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.story-card .brand{
+    font-size:22px;
+    font-weight:600;
+    color:#3a4ca8;
+    margin-bottom:8px;
+}
+
+.story-card a{
+    font-size:14px;
+    color:#3aa6a6;
+    text-decoration:none;
+    font-weight:500;
+    margin-bottom:10px;
+}
+.story-card a:hover{
+    text-decoration:underline;
+}
+
+.story-card img{
+    width:100%;
+    max-width: 220px;
+    margin-top:15px;
+    border-radius:4px;
+    height:auto;
+    display: blok;
+}
+
+.footer{
+    background:#2b2b2b;
+    color:#fff;
+    padding:60px 70px 30px;
+    font-size:14px;
+}
+
+.footer-columns{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:40px;
+}
+
+.footer-col{
+    width:23%;
+}
+
+.footer-col h4{
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding:0;
+}
+.footer-col ul li{
+    margin-bottom:10px;
+}
+.footer-col ul li a{
+    color:#ddd;
+    text-decoration:none;
+}
+.footer-col ul li a:hover{
+    text-decoration:underline;
+}
+
+.footer-bottom{
+    border-top:1px solid #444;
+    padding-top:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#bbb;
+    font-size:13px;
+}
+
+.social-icons i{
+    margin-left:15px;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+<table width="100%" bgcolor="black" height="60px">
+<tr>
+<td width="18%" align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" height="32">
+</td>
+
+<td width="62%" align="center">
+    <a href="#" class="nav">Products</a>
+    <a href="#" class="nav">Industries</a>
+    <a href="#" class="nav">Resources</a>
+    <a href="#" class="nav">Customers</a>
+    <a href="#" class="nav">Partners</a>
+    <a href="#" class="nav">Developers</a>
+    <a href="#" class="nav">Company</a>
+</td>
+
+<td width="20%" align="center">
+    <i class="fa-solid fa-magnifying-glass icon"></i>
+    <i class="fa-solid fa-globe icon"></i>
+    <i class="fa-regular fa-user icon"></i>
+</td>
+</tr>
+</table>
+<div class="hero">
+    <div class="hero-text">
+        <h1>New Oracle AI Data Platform provides unified view of all your data</h1>
+        <p>
+            For the first time, you can apply AI reasoning across all your
+            enterprise data and applications holistically.
+        </p>
+        <button>Read the release</button>
+    </div>
+
+    <div class="hero-img">
+        <img src="data:image/jpeg;base64,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">
+    </div>
+</div>
+
+<div class="stories">
+
+<div class="story-card">
+    <h3>Oracle Health Clinical AI Agent helps health system reduce documentation</h3>
+    <p>In pilot program, Sarah Bush Lincoln providers were able to spend less time in the EHR.</p>
+    <img src="data:image/png;base64,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">
+    <a href="#">Read Sarah Bush Lincoln’s story</a>
+
+</div>
+
+<div class="story-card">
+    <h3>SoundHound boosts performance, cuts costs with Oracle Cloud Infrastructure</h3>
+    <p>SoundHound AI uses OCI as its core infrastructure and expanded globally.</p>
+    <div class="brand">SoundHound AI</div>
+    <a href="#">Read SoundHound’s story</a>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSkhbkVlW-p5s_OzZLlrrUfr94IKT-J7Yz-BOOS9qdpzVtOWoq">
+</div>
+
+<div class="story-card">
+    <h3>Oracle Health helps Milton Keynes University Hospital reduce wait time</h3>
+    <p>Digital pre-op assessment tools helped expand Oracle Health EHR.</p>
+    <div class="brand">Milton Keynes University Hospital</div>
+    <a href="#">Read Milton Keynes Hospital’s story</a>
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy6LyOn2rOOCxg1b6OcW7zmYLuGni-VViv3WlCeTnepimI34bi">
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+<div class="footer-columns">
+    <div class="footer-col">
+        <h4>Resources for</h4>
+        <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Researchers</a></li>
+            <li><a href="#">Students and Educators</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Why Oracle</h4>
+        <ul>
+            <li><a href="#">Analyst Reports</a></li>
+            <li><a href="#">Best cloud-based ERP</a></li>
+            <li><a href="#">Cloud Economics</a></li>
+            <li><a href="#">Social Impact</a></li>
+            <li><a href="#">Security Practices</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+            <li><a href="#">What is a sovereign cloud?</a></li>
+            <li><a href="#">What is zero trust security?</a></li>
+            <li><a href="#">How AI is transforming finance</a></li>
+            <li><a href="#">What is a vector database?</a></li>
+            <li><a href="#">What are AI agents?</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>News and Events</h4>
+        <ul>
+            <li><a href="#">Oracle AI World</a></li>
+            <li><a href="#">Oracle Health Summit</a></li>
+            <li><a href="#">JavaOne</a></li>
+            <li><a href="#">Search all events</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer-bottom">
+    <div>© 2026 Oracle | Privacy | Do Not Sell My Info | Cookie Preferences | Ad Choices</div>
+    <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
