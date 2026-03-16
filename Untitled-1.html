@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beauty Parlour</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            line-height:1.6;
+        }
+
+        header{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:15px 30px;
+            background:powderblue;
+        }
+
+        nav a{
+            text-decoration:none;
+            margin:0 10px;
+            color:darkblue;
+            font-weight:bold;
+        }
+
+        section{
+            padding:40px;
+        }
+
+        /* HERO */
+        .hero{
+            display:flex;
+            gap:40px;
+            align-items:center;
+        }
+
+        .hero-text{
+            width:50%;
+        }
+
+        .hero-img{
+            width:50%;
+            text-align:center;
+        }
+
+        .hero-img img{
+            width:100%;
+            max-width:350px;
+        }
+
+        
+        .image-row{
+            display:flex;
+            justify-content:space-between;
+            margin-top:20px;
+        }
+
+        .image-row img{
+            width:23%;
+            height:150px;
+            object-fit:cover;
+        }
+
+        /* ABOUT */
+        .about{
+            display:flex;
+            gap:40px;
+            align-items:center;
+        }
+
+        .about img{
+            width:300px;
+        }
+
+        /* SERVICES LIST */
+        .services-list{
+            margin-left:20px;
+        }
+
+        /* FORM */
+        form{
+            width:300px;
+        }
+
+        input{
+            width:100%;
+            padding:7px;
+            margin-bottom:10px;
+        }
+
+        input[type="submit"]{
+            background:black;
+            color:white;
+            border:none;
+            padding:8px;
+        }
+
+        /* TABLE */
+        table{
+            border-collapse:collapse;
+            margin:auto;
+        }
+
+        table, th, td{
+            border:1px solid yellowgreen;
+            padding:8px 15px;
+            text-align:center;
+        }
+
+        /* FOOTER */
+        footer{
+            background:olive;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="https://bloomandblossom.ae/wp-content/uploads/2025/06/logobB-1024x1024.png" width="60" height="60">
+    <h2>Bloom & Blossom</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home">
+    <div class="hero">
+        <div class="hero-text">
+            <h2 style="color:purple">Welcome to our BEAUTY PARLOUR</h2>
+            <p>
+                Welcome to our beauty parlour where beauty meets care.
+                We provide professional beauty and hair care services
+                using quality products.
+            </p>
+        </div>
+
+        <div class="hero-img">
+            <img src="banner.jpg" alt="Banner Image">
+            <p><b>bloom  & blossom</b></p>
+        </div>
+    </div>
+<hr>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <img src="https://bloomandblossom.ae/wp-content/uploads/2025/06/mission1.jpg" alt="About Image">
+
+    <div>
+        <h2 style="color:darkred">About Us</h2>
+        <p>
+            Bloom & Blossom Where Beauty Blooms
+Experience expert care and elegant surroundings at our women-only salon in Mussafah, offering modern and traditional beauty services.
+Confidence starts with taking care of yourself, and at Bloom & Blossom, it is our goal to assist you in both looking and feeling great. Our team, with a combined 7+ years of experience and 3,000+ happy clients is ready to offer you a very comfortable, accurate, and luxurious time. We are more than a salon—we are the place where all your beauty needs are met.
+
+        </p>
+    </div>
+</section>
+    <hr>
+
+
+</section>
+
+<!-- SERVICES TABLE -->
+<section id="services">
+    <h2 style="color:sienna">Services and prices</h2>
+
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Price</th>
+        </tr>
+        <tr><td>Haircut</td><td>300 Rupees</td></tr>
+        <tr><td>Facial</td><td>500 Rupees</td></tr>
+        <tr><td>Hair Spa</td><td>800 Rupees</td></tr>
+        <tr><td>Makeup</td><td>1000 Rupees</td></tr>
+        <tr><td>Bridal Package</td><td>2000 Rupees</td></tr>
+    </table>
+</section>
+<!-- AVAILABLE SERVICES -->
+<section>
+    <div class="image-row">
+        <img src="r1.jpg" alt="facial">
+        <img src="r2.jpg">
+        <img src="r3.jpg">
+        <img src="r4.jpg">
+    </div>
+    <h2 style="color:darkblue">AVAILABLE SERVICES</h2>
+    <ol class="services-list">
+        <li>Haircut</li>
+        <li>Facial</li>
+        <li>Hair Spa</li>
+        <li>Makeup</li>
+        <li>Bridal Package</li>
+    </ol>
+</section>
+<hr>
+<!-- BOOKING FORM -->
+<section>
+    <h2 style="color:green">Booking Page</h2>
+
+    <form>
+        <input type="text" placeholder="Username">
+        <input type="tel" placeholder="Phone Number">
+        <input type="email" placeholder="Email ID">
+        <input type="password" placeholder="Password">
+        <input type="date">
+        <input type="submit" value="Login">
+    </form>
+</section>
+<h2 style="color:darkorange"> Get in touch with whatsapp</h2>
+<p style="color:mediumvioletred;">phone num  : 9876543210</p>
+<p>
+    ...  Feel free to chat with us and share your problems  ...
+</p>
+<!-- FOOTER -->
+<footer id="contact">
+    Address: Tadepalligudem |
+    Phone: 9876543210 |
+    Email:Bloom&blossom9@gmail.com
+</footer>
+
+</body>
+</html>
